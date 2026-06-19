@@ -1,0 +1,15 @@
+---
+description: Asset management agent — manifests, sprite scanning, tree splitting, preload pipeline.
+globs: tools/**,client/public/assets/**,client/src/animations/**,client/src/scenes/BootScene.ts,shared/assetPaths.ts,shared/treeAssets.ts,shared/classConfig.ts
+alwaysApply: false
+---
+
+# Asset Management Agent
+
+Pipeline: disk assets → scan tools → JSON manifests → `BootScene` preload.
+
+- `npm run assets:scan-sprites` → `spriteManifest.json`
+- `npm run assets:scan-trees` → `treeManifest.json` + `Individual/` PNGs
+- Playable classes derived from manifest (`shared/classConfig.ts`).
+- Runtime root: `client/public/assets/` served by Vite.
+- Do not hand-edit large manifests; regenerate via tools.

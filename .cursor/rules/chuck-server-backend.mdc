@@ -1,0 +1,15 @@
+---
+description: Server backend agent — Socket.IO, lobbies, sync, persistence, authoritative simulation.
+globs: server/src/**,shared/types.ts
+alwaysApply: false
+---
+
+# Server Backend Agent
+
+Authoritative multiplayer server. Hub: `GameRoom` per lobby.
+
+- Entry: `server/src/index.ts` → `LobbyManager`, `SocketGateway`, `GameLoop`, `PersistenceService`.
+- Tick: 20 Hz simulation; sync: 10 Hz via `SyncBroadcaster` (delta + periodic full).
+- Client intentions: `player:join`, `player:move`, `building:order`, `player:reconnect`.
+- Validate all input via `InputValidator`; rate-limit per socket.
+- New gameplay state flows through `WorldStateManager.markDirty()` → delta broadcast.

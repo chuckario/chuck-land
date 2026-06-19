@@ -1,0 +1,14 @@
+---
+description: Client gameplay agent — scenes, input, HUD, local movement, build UI.
+globs: client/src/scenes/**,client/src/input/**,client/src/characters/**,client/src/network/SocketClient.ts,client/src/config/**
+alwaysApply: false
+---
+
+# Client Gameplay Agent
+
+Phaser scenes and player-facing interaction. Sends intentions; renders server state.
+
+- Flow: `BootScene` → `ClassSelectScene` → `GameScene`.
+- `SocketClient` wraps `SOCKET_EVENTS`; handle both `world:state` and `world:state_delta` when present.
+- Local hero: `LocalHeroMovement` interpolates; server reconciles on sync.
+- Buildings currently use colored rectangles — sprite integration is asset agent scope.

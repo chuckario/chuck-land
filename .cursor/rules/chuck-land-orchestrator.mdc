@@ -1,0 +1,34 @@
+---
+description: Routes Chuck Land tasks to the correct domain agent (world gen, tiles, server, AI, assets, gameplay, shared).
+alwaysApply: true
+---
+
+# Chuck Land Agent Orchestrator
+
+Before implementing, classify the request into **one primary agent** (see `AGENTS.md`). Read that agent's skill from `.cursor/skills/<agent>/SKILL.md`.
+
+## Routing table
+
+| Keywords / topics | Agent | Skill |
+|-------------------|-------|-------|
+| map, biome, elevation, moisture, noise, river, beach, spawn, WorldManager | World Generation | `chuck-world-generation` |
+| tile, autotile, wang, blob, cliff, isometric, tileset, Floors_Tiles | Tile Rendering | `chuck-tile-rendering` |
+| socket, lobby, sync, delta, persistence, session, rate limit, GameRoom, server restart | Server Backend | `chuck-server-backend` |
+| NPC, profession, enemy, combat, aggro, patrol, AI behavior | AI Logic | `chuck-ai-logic` |
+| sprite, manifest, tree, scan, BootScene, animation loader, asset path | Asset Management | `chuck-asset-management` |
+| GameScene, HUD, input, movement, class select, build UI, client | Client Gameplay | `chuck-client-gameplay` |
+| types, SOCKET_EVENTS, enum, shared contract, WorldState shape | Shared Contract | `chuck-shared-contract` |
+
+## Multi-domain requests
+
+1. Identify **shared contract** changes first if types/events change.
+2. Implement **server** before **client** for new gameplay features.
+3. **Tile rendering** follows **world generation** data shape changes.
+4. State which agent owns each file in the response.
+
+## Hard rules
+
+- Client never mutates authoritative game state.
+- New socket events → `shared/types.ts` first.
+- Attach server features to `GameRoom`, not `index.ts` globals.
+- Stack is **TypeScript/Phaser/Socket.IO** — not Godot.

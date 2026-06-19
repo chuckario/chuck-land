@@ -1,0 +1,14 @@
+---
+description: AI logic agent — NPC professions, enemy spawning, future combat behavior.
+globs: server/src/professions/**,server/src/EnemyManager.ts,client/src/world/NpcRenderer.ts,client/src/world/EnemyRenderer.ts,shared/professionConfig.ts,shared/resourceConfig.ts
+alwaysApply: false
+---
+
+# AI Logic Agent
+
+Server simulates; client renders NPCs and enemies.
+
+- NPCs: `ProfessionAiManager.tick()` in `GameRoom.simulateTick()`.
+- Behaviors: `professionBehaviors.ts`, `BaseProfessionBehavior.ts` (move-to-target).
+- Enemies: biome-weighted spawn via `ENEMY_SPAWN_DEFINITIONS`; combat not yet implemented.
+- Mutate `WorldState.npcs` / `enemies` only on server; client reads from sync.

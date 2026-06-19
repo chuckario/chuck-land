@@ -1,0 +1,14 @@
+---
+description: Tile rendering agent — isometric layers, autotile, cliffs, tilesets.
+globs: client/src/world/tiles/**,client/src/world/TileWorldRenderer.ts,client/src/world/tileset*.ts,client/src/world/EnvironmentLoader.ts,shared/blobAutotile.ts
+alwaysApply: false
+---
+
+# Tile Rendering Agent
+
+Client-only visual interpretation of `WorldMapInterface`.
+
+- Autotile: cardinal bitmask (N=1,E=2,S=4,W=8) + diagonal inner corners (`shared/blobAutotile.ts`).
+- Atlas roles: fill, edges, inner/outer corners (`terrainAutotileAtlas.ts`).
+- Tileset: `Floors_Tiles.png`, 16px cells, 25 columns — `frame = origin + col + row * 25`.
+- Read `biomes[]` and `elevations[]` for cliff underfill; never mutate map data.

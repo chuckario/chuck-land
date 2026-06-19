@@ -1,0 +1,14 @@
+---
+description: Shared contract agent — types, socket events, cross-cutting enums and config.
+globs: shared/**
+alwaysApply: false
+---
+
+# Shared Contract Agent
+
+Single source of truth for client ↔ server agreement.
+
+- `shared/types.ts`: enums, `WorldState`, `SOCKET_EVENTS`, map dimensions.
+- Coordinate changes here **before** server or client implementations.
+- Breaking changes require updates in both `SocketGateway` and `SocketClient`.
+- Import paths: client `@shared/*`, server `../../shared/*`.

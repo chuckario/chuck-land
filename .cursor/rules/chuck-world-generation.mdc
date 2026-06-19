@@ -1,0 +1,14 @@
+---
+description: World generation agent — procedural map, biomes, noise, resource placement.
+globs: server/src/WorldManager.ts,server/src/biomeGeneration.ts,server/src/ResourceManager.ts,shared/worldNoise.ts,shared/biomeConfig.ts
+alwaysApply: false
+---
+
+# World Generation Agent
+
+Owns procedural map output: `WorldMapInterface` with `tiles[]`, `biomes[]`, `elevations[]`.
+
+- Pipeline: noise → elevation/moisture → `assignBiomeField()` → `paintBiomeTerrain()` → rivers/beaches.
+- Map size: 320×240, tile size 32 (`shared/types.ts`).
+- Biomes: STANDARD, DESERT, FAIRY_FOREST, CEMETERY (`shared/biomeConfig.ts`).
+- Do not change client rendering or socket protocol here; extend `shared/types.ts` if map shape changes.
