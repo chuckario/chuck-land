@@ -1,0 +1,21 @@
+{
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "defaultFrameCount": 4,
+  "animations": {
+    "idle": { "frameRate": 6, "repeat": -1 },
+    "run": { "frameRate": 10, "repeat": -1 },
+    "walk": { "frameRate": 10, "repeat": -1 },
+    "carry_idle": { "frameRate": 6, "repeat": -1 },
+    "carry_run": { "frameRate": 10, "repeat": -1 },
+    "carry_walk": { "frameRate": 10, "repeat": -1 },
+    "collect": { "frameRate": 10, "repeat": 0 },
+    "crush": { "frameRate": 12, "repeat": 0 },
+    "death": { "frameRate": 8, "repeat": 0 },
+    "fishing": { "frameRate": 8, "repeat": -1 },
+    "hit": { "frameRate": 12, "repeat": 0 },
+    "pierce": { "frameRate": 12, "repeat": 0 },
+    "slice": { "frameRate": 12, "repeat": 0 },
+    "watering": { "frameRate": 8, "repeat": 0 }
+  }
+}

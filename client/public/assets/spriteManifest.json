@@ -1,0 +1,1015 @@
+{
+  "scannedAt": "2026-06-19T14:25:10.335Z",
+  "defaultCharacterProfileId": "class:body-a",
+  "defaultVillagerProfileId": "class:body-a",
+  "profiles": [
+    {
+      "profileId": "class:body-a",
+      "characterSet": "body-a",
+      "entityType": "CLASS",
+      "label": "Body_A",
+      "assetRoot": "/assets/Class/Body_A/Animations",
+      "sheets": [
+        {
+          "file": "Carry_Idle/Carry_Idle_Down-Sheet.png",
+          "textureKey": "body-a-tex-carry_idle-down",
+          "animationKey": "body-a-carry_idle-down",
+          "action": "CARRY_IDLE",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Idle/Carry_Idle_Side-Sheet.png",
+          "textureKey": "body-a-tex-carry_idle-right",
+          "animationKey": "body-a-carry_idle-right",
+          "action": "CARRY_IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Idle/Carry_Idle_Up-Sheet.png",
+          "textureKey": "body-a-tex-carry_idle-up",
+          "animationKey": "body-a-carry_idle-up",
+          "action": "CARRY_IDLE",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Run/Carry_Run_Down-Sheet.png",
+          "textureKey": "body-a-tex-carry_run-down",
+          "animationKey": "body-a-carry_run-down",
+          "action": "CARRY_RUN",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Run/Carry_Run_Side-Sheet.png",
+          "textureKey": "body-a-tex-carry_run-right",
+          "animationKey": "body-a-carry_run-right",
+          "action": "CARRY_RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Run/Carry_Run_Up-Sheet.png",
+          "textureKey": "body-a-tex-carry_run-up",
+          "animationKey": "body-a-carry_run-up",
+          "action": "CARRY_RUN",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Walk/Carry_Walk_Down-Sheet.png",
+          "textureKey": "body-a-tex-carry_walk-down",
+          "animationKey": "body-a-carry_walk-down",
+          "action": "CARRY_WALK",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Walk/Carry_Walk_Side-Sheet.png",
+          "textureKey": "body-a-tex-carry_walk-right",
+          "animationKey": "body-a-carry_walk-right",
+          "action": "CARRY_WALK",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Carry_Walk/Carry_Walk_Up-Sheet.png",
+          "textureKey": "body-a-tex-carry_walk-up",
+          "animationKey": "body-a-carry_walk-up",
+          "action": "CARRY_WALK",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Collect_Base/Collect_Down-Sheet.png",
+          "textureKey": "body-a-tex-collect-down",
+          "animationKey": "body-a-collect-down",
+          "action": "COLLECT",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "file": "Collect_Base/Collect_Side-Sheet.png",
+          "textureKey": "body-a-tex-collect-right",
+          "animationKey": "body-a-collect-right",
+          "action": "COLLECT",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "file": "Collect_Base/Collect_Up-Sheet.png",
+          "textureKey": "body-a-tex-collect-up",
+          "animationKey": "body-a-collect-up",
+          "action": "COLLECT",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "file": "Crush_Base/Crush_Down-Sheet.png",
+          "textureKey": "body-a-tex-crush-down",
+          "animationKey": "body-a-crush-down",
+          "action": "CRUSH",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Crush_Base/Crush_Side-Sheet.png",
+          "textureKey": "body-a-tex-crush-right",
+          "animationKey": "body-a-crush-right",
+          "action": "CRUSH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Crush_Base/Crush_Up-Sheet.png",
+          "textureKey": "body-a-tex-crush-up",
+          "animationKey": "body-a-crush-up",
+          "action": "CRUSH",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Death_Base/Death_Down-Sheet.png",
+          "textureKey": "body-a-tex-death-down",
+          "animationKey": "body-a-death-down",
+          "action": "DEATH",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Death_Base/Death_Side-Sheet.png",
+          "textureKey": "body-a-tex-death-right",
+          "animationKey": "body-a-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Death_Base/Death_Up-Sheet.png",
+          "textureKey": "body-a-tex-death-up",
+          "animationKey": "body-a-death-up",
+          "action": "DEATH",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Fishing_Base/Fishing_Down-Sheet.png",
+          "textureKey": "body-a-tex-fishing-down",
+          "animationKey": "body-a-fishing-down",
+          "action": "FISHING",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "file": "Fishing_Base/Fishing_Side-Sheet.png",
+          "textureKey": "body-a-tex-fishing-right",
+          "animationKey": "body-a-fishing-right",
+          "action": "FISHING",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "file": "Fishing_Base/Fishing_Up-Sheet.png",
+          "textureKey": "body-a-tex-fishing-up",
+          "animationKey": "body-a-fishing-up",
+          "action": "FISHING",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "file": "Hit_Base/Hit_Down-Sheet.png",
+          "textureKey": "body-a-tex-hit-down",
+          "animationKey": "body-a-hit-down",
+          "action": "HIT",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Hit_Base/Hit_Side-Sheet.png",
+          "textureKey": "body-a-tex-hit-right",
+          "animationKey": "body-a-hit-right",
+          "action": "HIT",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Hit_Base/Hit_Up-Sheet.png",
+          "textureKey": "body-a-tex-hit-up",
+          "animationKey": "body-a-hit-up",
+          "action": "HIT",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Idle_Base/Idle_Down-Sheet.png",
+          "textureKey": "body-a-tex-idle-down",
+          "animationKey": "body-a-idle-down",
+          "action": "IDLE",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Idle_Base/Idle_Side-Sheet.png",
+          "textureKey": "body-a-tex-idle-right",
+          "animationKey": "body-a-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Idle_Base/Idle_Up-Sheet.png",
+          "textureKey": "body-a-tex-idle-up",
+          "animationKey": "body-a-idle-up",
+          "action": "IDLE",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Pierce_Base/Pierce_Down-Sheet.png",
+          "textureKey": "body-a-tex-pierce-down",
+          "animationKey": "body-a-pierce-down",
+          "action": "PIERCE",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Pierce_Base/Pierce_Side-Sheet.png",
+          "textureKey": "body-a-tex-pierce-right",
+          "animationKey": "body-a-pierce-right",
+          "action": "PIERCE",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Pierce_Base/Pierce_Top-Sheet.png",
+          "textureKey": "body-a-tex-pierce-up",
+          "animationKey": "body-a-pierce-up",
+          "action": "PIERCE",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Run_Base/Run_Down-Sheet.png",
+          "textureKey": "body-a-tex-run-down",
+          "animationKey": "body-a-run-down",
+          "action": "RUN",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Run_Base/Run_Side-Sheet.png",
+          "textureKey": "body-a-tex-run-right",
+          "animationKey": "body-a-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Run_Base/Run_Up-Sheet.png",
+          "textureKey": "body-a-tex-run-up",
+          "animationKey": "body-a-run-up",
+          "action": "RUN",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Slice_Base/Slice_Down-Sheet.png",
+          "textureKey": "body-a-tex-slice-down",
+          "animationKey": "body-a-slice-down",
+          "action": "SLICE",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Slice_Base/Slice_Side-Sheet.png",
+          "textureKey": "body-a-tex-slice-right",
+          "animationKey": "body-a-slice-right",
+          "action": "SLICE",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Slice_Base/Slice_Up-Sheet.png",
+          "textureKey": "body-a-tex-slice-up",
+          "animationKey": "body-a-slice-up",
+          "action": "SLICE",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "file": "Walk_Base/Walk_Down-Sheet.png",
+          "textureKey": "body-a-tex-walk-down",
+          "animationKey": "body-a-walk-down",
+          "action": "WALK",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Walk_Base/Walk_Side-Sheet.png",
+          "textureKey": "body-a-tex-walk-right",
+          "animationKey": "body-a-walk-right",
+          "action": "WALK",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Walk_Base/Walk_Up-Sheet.png",
+          "textureKey": "body-a-tex-walk-up",
+          "animationKey": "body-a-walk-up",
+          "action": "WALK",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "file": "Watering_Base/Watering_Down-Sheet.png",
+          "textureKey": "body-a-tex-watering-down",
+          "animationKey": "body-a-watering-down",
+          "action": "WATERING",
+          "direction": "DOWN",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Watering_Base/Watering_Side-Sheet.png",
+          "textureKey": "body-a-tex-watering-right",
+          "animationKey": "body-a-watering-right",
+          "action": "WATERING",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Watering_Base/Watering_Up-Sheet.png",
+          "textureKey": "body-a-tex-watering-up",
+          "animationKey": "body-a-watering-up",
+          "action": "WATERING",
+          "direction": "UP",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        }
+      ]
+    },
+    {
+      "profileId": "class:knight",
+      "characterSet": "class-knight",
+      "entityType": "CLASS",
+      "label": "Knight",
+      "assetRoot": "/assets/Class/Knight",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "class-knight-tex-death-right",
+          "animationKey": "class-knight-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 9,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "class-knight-tex-idle-right",
+          "animationKey": "class-knight-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "class-knight-tex-run-right",
+          "animationKey": "class-knight-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "class:rogue",
+      "characterSet": "class-rogue",
+      "entityType": "CLASS",
+      "label": "Rogue",
+      "assetRoot": "/assets/Class/Rogue",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "class-rogue-tex-death-right",
+          "animationKey": "class-rogue-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 12,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "class-rogue-tex-idle-right",
+          "animationKey": "class-rogue-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "class-rogue-tex-run-right",
+          "animationKey": "class-rogue-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "class:wizzard",
+      "characterSet": "class-wizzard",
+      "entityType": "CLASS",
+      "label": "Wizzard",
+      "assetRoot": "/assets/Class/Wizzard",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "class-wizzard-tex-death-right",
+          "animationKey": "class-wizzard-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 12,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "class-wizzard-tex-idle-right",
+          "animationKey": "class-wizzard-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "class-wizzard-tex-run-right",
+          "animationKey": "class-wizzard-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:orc-crew-orc",
+      "characterSet": "enemy-orc-crew-orc",
+      "entityType": "ENEMY",
+      "label": "Orc Crew\\Orc",
+      "assetRoot": "/assets/Enemies/Orc Crew/Orc",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-tex-death-right",
+          "animationKey": "enemy-orc-crew-orc-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-tex-idle-right",
+          "animationKey": "enemy-orc-crew-orc-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-tex-run-right",
+          "animationKey": "enemy-orc-crew-orc-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:orc-crew-orc-rogue",
+      "characterSet": "enemy-orc-crew-orc-rogue",
+      "entityType": "ENEMY",
+      "label": "Orc Crew\\Orc - Rogue",
+      "assetRoot": "/assets/Enemies/Orc Crew/Orc - Rogue",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-rogue-tex-death-right",
+          "animationKey": "enemy-orc-crew-orc-rogue-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-rogue-tex-idle-right",
+          "animationKey": "enemy-orc-crew-orc-rogue-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-rogue-tex-run-right",
+          "animationKey": "enemy-orc-crew-orc-rogue-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:orc-crew-orc-shaman",
+      "characterSet": "enemy-orc-crew-orc-shaman",
+      "entityType": "ENEMY",
+      "label": "Orc Crew\\Orc - Shaman",
+      "assetRoot": "/assets/Enemies/Orc Crew/Orc - Shaman",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-shaman-tex-death-right",
+          "animationKey": "enemy-orc-crew-orc-shaman-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 7,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-shaman-tex-idle-right",
+          "animationKey": "enemy-orc-crew-orc-shaman-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-shaman-tex-run-right",
+          "animationKey": "enemy-orc-crew-orc-shaman-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:orc-crew-orc-warrior",
+      "characterSet": "enemy-orc-crew-orc-warrior",
+      "entityType": "ENEMY",
+      "label": "Orc Crew\\Orc - Warrior",
+      "assetRoot": "/assets/Enemies/Orc Crew/Orc - Warrior",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-warrior-tex-death-right",
+          "animationKey": "enemy-orc-crew-orc-warrior-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 80,
+          "frameHeight": 80,
+          "frameCount": 7,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-warrior-tex-idle-right",
+          "animationKey": "enemy-orc-crew-orc-warrior-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-orc-crew-orc-warrior-tex-run-right",
+          "animationKey": "enemy-orc-crew-orc-warrior-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:skeleton-crew-skeleton-base",
+      "characterSet": "enemy-skeleton-crew-skeleton-base",
+      "entityType": "ENEMY",
+      "label": "Skeleton Crew\\Skeleton - Base",
+      "assetRoot": "/assets/Enemies/Skeleton Crew/Skeleton - Base",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-base-tex-death-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-base-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 12,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-base-tex-idle-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-base-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-base-tex-run-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-base-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:skeleton-crew-skeleton-mage",
+      "characterSet": "enemy-skeleton-crew-skeleton-mage",
+      "entityType": "ENEMY",
+      "label": "Skeleton Crew\\Skeleton - Mage",
+      "assetRoot": "/assets/Enemies/Skeleton Crew/Skeleton - Mage",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-mage-tex-death-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-mage-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-mage-tex-idle-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-mage-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-mage-tex-run-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-mage-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:skeleton-crew-skeleton-rogue",
+      "characterSet": "enemy-skeleton-crew-skeleton-rogue",
+      "entityType": "ENEMY",
+      "label": "Skeleton Crew\\Skeleton - Rogue",
+      "assetRoot": "/assets/Enemies/Skeleton Crew/Skeleton - Rogue",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-rogue-tex-death-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-rogue-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-rogue-tex-idle-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-rogue-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-rogue-tex-run-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-rogue-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "profileId": "enemy:skeleton-crew-skeleton-warrior",
+      "characterSet": "enemy-skeleton-crew-skeleton-warrior",
+      "entityType": "ENEMY",
+      "label": "Skeleton Crew\\Skeleton - Warrior",
+      "assetRoot": "/assets/Enemies/Skeleton Crew/Skeleton - Warrior",
+      "sheets": [
+        {
+          "file": "Death/Death-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-warrior-tex-death-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-warrior-death-right",
+          "action": "DEATH",
+          "direction": "RIGHT",
+          "frameWidth": 48,
+          "frameHeight": 48,
+          "frameCount": 8,
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "file": "Idle/Idle-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-warrior-tex-idle-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-warrior-idle-right",
+          "action": "IDLE",
+          "direction": "RIGHT",
+          "frameWidth": 32,
+          "frameHeight": 32,
+          "frameCount": 4,
+          "frameRate": 6,
+          "repeat": -1
+        },
+        {
+          "file": "Run/Run-Sheet.png",
+          "textureKey": "enemy-skeleton-crew-skeleton-warrior-tex-run-right",
+          "animationKey": "enemy-skeleton-crew-skeleton-warrior-run-right",
+          "action": "RUN",
+          "direction": "RIGHT",
+          "frameWidth": 64,
+          "frameHeight": 64,
+          "frameCount": 6,
+          "frameRate": 10,
+          "repeat": -1
+        }
+      ]
+    }
+  ]
+}
