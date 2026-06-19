@@ -5,7 +5,10 @@ import {
   NpcInterface,
   ResourceNodeInterface,
   WorldState,
+  WorldStateDelta,
 } from '../../../shared/types';
+
+export type { WorldStateDelta } from '../../../shared/types';
 
 /** Persistierbarer Snapshot des dynamischen Weltzustands (Karte ist deterministisch). */
 export interface PersistedWorldSnapshot {
@@ -18,21 +21,6 @@ export interface PersistedWorldSnapshot {
   resources: ResourceNodeInterface[];
   buildOrders: BuildOrderInterface[];
   buildings: BuildingInterface[];
-}
-
-export interface WorldStateDelta {
-  version: number;
-  timestamp: number;
-  /** Vollständiger Zustand bei version=1 oder periodischem Full-Sync */
-  full?: WorldState;
-  /** Nur geänderte Entitäten bei inkrementellem Sync */
-  heroes?: HeroInterface[];
-  npcs?: NpcInterface[];
-  resources?: ResourceNodeInterface[];
-  buildOrders?: BuildOrderInterface[];
-  buildings?: BuildingInterface[];
-  mayorId?: string | null;
-  playerCount?: number;
 }
 
 export type DirtyFlags = {

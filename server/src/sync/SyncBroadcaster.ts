@@ -1,7 +1,6 @@
 import { Namespace, Socket } from 'socket.io';
-import { SOCKET_EVENTS, WorldState } from '../../../shared/types';
+import { SOCKET_EVENTS, WorldState, WorldStateDelta } from '../../../shared/types';
 import { Logger } from '../logging/Logger';
-import { WorldStateDelta } from '../state/stateTypes';
 import { WorldStateManager } from '../state/WorldStateManager';
 
 export class SyncBroadcaster {

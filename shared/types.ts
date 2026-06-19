@@ -184,6 +184,31 @@ export interface WorldState {
   buildings: BuildingInterface[];
 }
 
+/** Inkrementeller Weltzustand — nur geänderte Slices seit dem letzten Sync. */
+export interface WorldStateDelta {
+  version: number;
+  timestamp: number;
+  /** Vollständiger Zustand bei Join/Reconnect oder periodischem Full-Sync */
+  full?: WorldState;
+  heroes?: HeroInterface[];
+  npcs?: NpcInterface[];
+  resources?: ResourceNodeInterface[];
+  buildOrders?: BuildOrderInterface[];
+  buildings?: BuildingInterface[];
+  mayorId?: string | null;
+  playerCount?: number;
+}
+
+export interface SessionGrantedPayload {
+  sessionToken: string;
+  heroId: string;
+  expiresAt: number;
+}
+
+export interface LobbyAssignedPayload {
+  lobbyId: string;
+}
+
 export enum Profession {
   LUMBERJACK = 'LUMBERJACK',
   CARPENTER = 'CARPENTER',

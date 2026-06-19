@@ -43,6 +43,7 @@ export class GameScene extends Phaser.Scene {
   private heroSprites = new Map<string, AnimatedCharacterVisual>();
   private buildingSprites = new Map<string, BuildingSprite>();
   private hudText!: Phaser.GameObjects.Text;
+  private connectionStatusText!: Phaser.GameObjects.Text;
   private tileWorld!: TileWorldRenderer;
   private resourceRenderer!: ResourceRenderer;
   private npcRenderer!: NpcRenderer;
@@ -96,6 +97,18 @@ export class GameScene extends Phaser.Scene {
     socketClient.onWorldState((state) => {
       this.syncWorld(state);
     });
+
+    socketClient.onConnectionState((connected) => {
+      this.connectionStatusText.setVisible(!connected);
+    });
+
+    socketClient.onSessionExpired(() => {
+      this.connectionStatusText.setText('Session abgelaufen — zurück zur Auswahl');
+      this.connectionStatusText.setVisible(true);
+      this.time.delayedCall(2000, () => {
+        this.scene.start('ClassSelectScene');
+      });
+    });
   }
 
   update(_time: number, delta: number): void {
@@ -122,6 +135,18 @@ export class GameScene extends Phaser.Scene {
     })
       .setScrollFactor(0)
       .setDepth(UI_DEPTH);
+
+    this.connectionStatusText = this.add.text(GAME_WIDTH / 2, 16, 'Verbindung unterbrochen — Reconnect...', {
+      fontFamily: 'Segoe UI, Arial, sans-serif',
+      fontSize: '14px',
+      color: '#fef3c7',
+      backgroundColor: '#78350fcc',
+      padding: { x: 10, y: 6 },
+    })
+      .setOrigin(0.5, 0)
+      .setScrollFactor(0)
+      .setDepth(UI_DEPTH + 1)
+      .setVisible(false);
   }
 
   private createLegend(): void {
@@ -178,7 +203,11 @@ export class GameScene extends Phaser.Scene {
   }
 
   private renderMapFromServer(state: WorldState): void {
-    const mapKey = `${state.map.width}:${state.map.height}:${state.map.tileSize}:${state.map.tiles.join('|')}`;
+    if (!state.map?.tiles?.length) {
+      return;
+    }
+
+    const mapKey = `${state.map.width}:${state.map.height}:${state.map.tileSize}:${state.map.tiles.length}`;
 
     if (mapKey !== this.currentMapKey) {
       this.tileWorld.render(state.map);

@@ -255,8 +255,22 @@ export class ClassSelectScene extends Phaser.Scene {
       this.joinButtonBg.setFillStyle(0x2563eb);
     });
 
+    socketClient.onSessionExpired(() => {
+      this.statusText.setText('Session abgelaufen — bitte neu beitreten.').setColor('#fbbf24');
+      this.isJoining = false;
+      this.joinButtonBg.setFillStyle(0x2563eb);
+    });
+
     try {
       await socketClient.connect();
+
+      const restoredHero = await socketClient.tryRestoreSession();
+      if (restoredHero) {
+        this.statusText.setText('Session wiederhergestellt').setColor('#4ade80');
+        this.scene.start('GameScene', { hero: restoredHero });
+        return;
+      }
+
       this.statusText.setText('Mit Server verbunden').setColor('#4ade80');
     } catch {
       this.statusText.setText('Server nicht erreichbar (localhost:3000)').setColor('#f87171');
